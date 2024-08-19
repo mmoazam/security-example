@@ -10,4 +10,14 @@ public class GreetingController {
     public String sayHello(){
         return "Hello from GreetingController";
     }
+
+    @GetMapping("/user")
+    public String users(){
+        return "users endpoint GreetingController";
+    }
+
+    @GetMapping("/admin")
+    public String admins(){
+        return "admins endpoint GreetingController";
+    }
 }
